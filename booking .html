@@ -1,0 +1,82 @@
+<html>
+<style>
+	ul.windows {display:inline-block;padding:0}
+	ul.windows li {display:inline}
+	ul.windows li.active{background-color: blue;color:green;}
+	h1.title{color:blue;
+		text-align: center}
+	.book{width:100%;}
+	footer{background-color: grey;width:100%;height:200px;text-align: center}
+</style>
+<body>
+	<ul class="windows">
+		<li><a href="mku.html">Home</a></li>
+		<li><a href="ubi.html">RoomInfo</a></li>
+		<li class="active"><a href="#">Booking</a></li>
+		<li><a href="#">contact</a></li>
+	</ul>
+	<h1 class=title>Grand Mullah Resort</h1>
+	<hr>
+	<p style="text-align: center;">fill the form bellow to book a room</p>
+	<h3 style="text-align: center"><u>BOOKING FORM</u></h3>
+	<marquee><b><i>Ensure to fill all the spaces</i></b></marquee>
+	<div>
+	<form class="book">
+		<fieldset>
+			<legend>Personnal Details</legend>
+			<label>First Name </label><input type="text" name="First">
+			<label>SurName </label><input type="text" name="sur"><br><br>
+			<label>ID/Passport </label><input type="text"><br><br>
+			<label>Telephone No: </label><input type="tel" placeholder="+254700000000" maxlength="13"><br><br>
+			<input type="radio" id="gender" name="gender" value="male"/>Male
+			<input type="radio" id="gender" name="gender" value="female"/>Female
+			<input type="radio" id="gender" name="gender" value="others"/>Others<br><br>
+			<label> Country/Ethnicity </label><input type="text" placeholder="Kenya" name="Country"><br><br>
+			<label> Total familiy members </label>
+			<input type="number" name="familiy">
+		</fieldset><br><br><br>
+		<fieldset>
+			<legend>Room Details</legend>
+			<label>Arrival Date</label><input type="date" name="Arrival">
+			<label>Depature Date</label><input type="date" name="Depature"><br><br>
+			<label>Select a Room </label>
+			<select name ="roomtype">
+				<option value="Single Room">Single Room</option>
+				<option value=bedsitter>Bedsitter</option>
+				<option value="One Bedroom">One Bedroom</option>
+				<option value="Two Bedroom">Two Bedroom</option>
+				<option value="VIP">VIP</option>
+			</select><br><br>
+			<label>Enter MPesa Transaction code for the room. </label><br><br> 
+			<label>MPesa Trans: </label><input type="type" name="mpesa">
+			<input type="submit" value="VALIDATE"><br><br>
+			<input type="text" placeholder="AMOUNT PAID" disabled><br><br>
+			<label>Food Services To be Offered: </label>
+			<input type="radio" id="food" name="food" value="brakefirst"/>Break-First
+			<input type="radio" id="food" name="food" value="lunch"/>Lunch
+			<input type="radio" id="food" name="food" value="dinner"/>Dinner<br><br>
+
+
+		</fieldset><br><br><br>
+		<fieldset>
+			<legend>health Details</legend>
+			<label>write down any health detail or any factor that should be concidered while choosing a room for you</label><br><br>
+			<label>Does you family suffer any disease/disability</label>
+			<input type="radio" id="disease" name="disease" value="yes"/>Yes
+			<input type="radio" id="disease" name="disease" value="no"/>No<br><br>
+			<label>If yes <b>who</b> and <b>explain in details<b></label><br>
+			<textarea placeholder="This filed can be extended"></textarea>
+		</fieldset>
+	</form><br>
+	<div style="text-align: center;">
+	<button style="background-color: red;width:150px;height:50px">SUBMIT</button>
+	</div>
+	<p><small>The personnal details should be filled with legit data to avoid any sort of problems</small></p>
+	</div>
+</body><br><br><br><br>
+ <footer>
+	 	Thank you for concidering grand mullah resort as option to breing you your enjoyment and pleasure<br><br>contact us <a href="#">07070907018</a><br>
+	 		email  <a href="#">grandmullahresort@gmail.com</a>
+	 		<br><br> copywrite 2022
+	 </footer>
+</html>
